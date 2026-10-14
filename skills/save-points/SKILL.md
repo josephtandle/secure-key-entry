@@ -27,4 +27,5 @@ Never commit secrets: before saving, `git status --short` must not list `.env` o
 
 - Never use `git reset --hard`, `git clean`, `git checkout -- .`, `git push --force`, or anything that throws work away. Undo is always done by adding a new save point (see the `undo` skill), so every state stays recoverable.
 - Do not push to GitHub or any remote unless the user asks.
+- If another session or agent is working in this project at the same time, do not both edit the same files at once. Finish and save one, then start the other. If you notice files changing that you did not change, stop and tell the user before saving or undoing anything.
 - When the user asks "what changed?", summarise `git log --oneline -10` and `git diff --stat` in plain English, not raw output.
