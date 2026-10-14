@@ -1,6 +1,11 @@
-# Secure Key Entry
+# Secure Key Entry and Safety Skills
 
-A small pop-up for pasting API keys and passwords, so they go straight into your project's `.env` file (or your system keychain) and never into the AI chat. Works with Claude Code and Codex, on Mac and Windows.
+Four safety skills for Claude Code and Codex, on Mac and Windows:
+
+- **secure-key-entry**: a small pop-up for pasting API keys and passwords, so they go straight into your project's `.env` file (or your system keychain) and never into the AI chat.
+- **save-points**: your project is saved with Git before and after every real change, automatically.
+- **undo**: type `/undo` in Claude Code or `$undo` in Codex (or just say "undo") to go back to an earlier save point. Nothing is lost, so you can even undo the undo ("redo").
+- **safe-delete**: anything deleted goes to the Trash or Recycle Bin, never straight to permanent deletion.
 
 ## Why
 
@@ -11,7 +16,7 @@ Anything you paste into a chat is stored in the conversation history. Keys that 
 Paste this into Claude Code or Codex:
 
 ```
-Install the secure-key-entry skill from https://github.com/josephtandle/secure-key-entry. Clone it (or pull the latest if it is already cloned) into ~/.secure-key-entry, then run scripts/install.sh on Mac, or scripts/install.ps1 with PowerShell on Windows. Confirm the skill is in ~/.claude/skills/secure-key-entry and ~/.agents/skills/secure-key-entry.
+Install the safety skills (secure-key-entry, save-points, undo, safe-delete) from https://github.com/josephtandle/secure-key-entry. Clone it (or pull the latest if it is already cloned) into ~/.secure-key-entry, then run scripts/install.sh on Mac, or scripts/install.ps1 with PowerShell on Windows. Confirm all four skills are in ~/.claude/skills and ~/.agents/skills.
 ```
 
 Or run it yourself:
